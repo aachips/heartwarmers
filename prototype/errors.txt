@@ -1,0 +1,3 @@
+While no WAVE contrast errors are reported, you have color accessibility problems. Your Browse By Category background blue is #337ab7 and the hove link color is #da34a2. That's a ratio of 1.08. Way below the accessible guideline. Even having those colors adjacent - like the pink header background (##ef0883) and the blue Browse button is well below the threshold, causing a distracting 3D/overtone effect.
+
+Profile page has square frame on avatar and uninteresting non robust profile sections. Add a wishlist.

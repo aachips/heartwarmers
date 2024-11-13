@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Heartwarmers - Map Navigator</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <script src="js/js.js" defer></script>
+  </head>
+  <body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        injectHeader();
+        addBreadcrumbs();
+        includeFooter();
+      });
+    </script>
+    <main id="navigator">
+      <div class="map-section">
+        <iframe
+        style="border:0"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCeRwBqG6OrIZtkzefdX5xcv3VnjTk88IY&q=Eiffel+Tower,Paris+France"
+        allowfullscreen>
+      </iframe>
+      </div>
+  
+      <div class="search-bar-section">
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <label for="search">Search...</label>
+          <input type="text" id="search">
+        </div>
+      </div>
+  
+      <div class="filter-section">
+        <div class="filter-row">
+          <span>Filter by:</span>
+          <button class="filter-button">Category</button>
+          <button class="filter-button">Distance</button>
+          <button class="filter-button">Rating</button>
+          <i class="fas fa-sliders-h advanced-filter-icon"></i>
+        </div>
+      </div>
+  
+      <div class="business-listings-section">
+        <div class="business-listing">
+          <img src="images/icons/user-avatar.png" alt="Business Image Avatar." class="business-image">
+          <div class="business-info">
+            <h2>Business Name</h2>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="icons">
+              <i class="fas fa-bookmark"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+            <p>123 Reviews</p>
+            <p>Category: Food</p>
+            <p>Distance: 1.2 miles</p>
+            <p>Hours: Mon-Thu 11am-10pm, Fri-Sat 11am-11pm, Sun 12pm-9pm</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination-section">
+        <div class="pagination">
+          <i class="fas fa-chevron-left"></i>
+          <span>Previous</span>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>...</span>
+          <span>Next</span>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

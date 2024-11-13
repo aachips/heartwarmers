@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartwarmers - Landing Page</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <script src="js/js.js" defer></script>
+  </head>
+  <body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        injectHeader();
+        addBreadcrumbs();
+        includeFooter();
+      });
+    </script>
+    <main class="landing">
+      <section class="search-section">
+        <div class="cta">
+          <h1>Find Warmth and Kindness Near You.</h1>
+          <a class="cta-button" href="category.html">Browse by Category</a>    
+        </div>
+        <div class="search-bar">
+          <label for="search">Search:</label>
+          <input type="text" class="search-input" id="search" aria-label="Search">
+          <label for="location">Location:</label>
+          <input type="text"  class="location-input" id="location" aria-label="Zip Code or City">
+          <a href="navigator.html" class="search-button">
+            <img src="images/icons/gps.png" alt="GPS Icon." height="32" width="32">
+          </a>
+        </div>
+        <div class="links">
+          <a href="category.html" class="cta-button">Browse by Category</a>
+          <a href="navigator.html" class="cta-button">Filters</a>
+          <a href="feature.html" class="cta-button">Featured</a>
+        </div>
+      </section>
+      <section class="logo-section">
+        <img src="images/logos/android-chrome-192x192.png" alt="Heartwarmers Logo." class="logo" width="192" height="192">
+        <p>Heartwarmers is an initiative by and for unhoused persons. For organizations to advertise free amenities like public bathrooms, hot water, coffee, wifi, showers, pay-it-forward or sliding scale meals, and odd labour exchanges.</p>
+      </section>
+    </main>
+  </body>
+</html>

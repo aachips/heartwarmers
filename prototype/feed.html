@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Heartwarmers - News Feed Discussion</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <script src="js/js.js" defer></script>
+  </head>
+  <body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        injectHeader();
+        addBreadcrumbs();
+        initModal();
+        includeFooter();
+      });
+    </script>
+    <main class="feed">
+      <article class="post">
+        <header class="post-header">
+          <img src="images/icons/user-avatar.png" alt="Avatar" class="avatar">
+          <a href="user-profile.html"><span class="name">John Doe</span></a>
+          <!-- <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Smashicons - Flaticon</a> -->
+        </header>
+        <a class="image-link" data-image-url="images/post-cat.png">
+          <img src="images/post-cat.png" alt="Cat in window."  class="image-preview">
+        </a>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        <footer class="post-footer">
+          <button class="heart-icon">
+          <img src="images/logos/favicon-32x32.png" alt="Heart">
+          </button>
+          <button class="comment-icon">
+          <img src="images/icons/comments.png" alt="Comment" width="32" height="32">
+          <!-- <a href="https://www.flaticon.com/free-icons/message" title="message icons">Message icons created by Freepik - Flaticon</a> -->
+          </button>
+          <button class="share-icon">
+          <img src="images/icons/next.png" alt="Share" width="32" height="32">
+          <!-- <a href="https://www.flaticon.com/free-icons/share" title="share icons">Share icons created by Freepik - Flaticon</a> -->
+          </button>
+        </footer>
+        <div class="comment-section">
+          <ul class="comment-list">
+            <!-- Add a placeholder comment -->
+            <li class="comment">
+              <div class="comment-author">John Doe</div>
+              <div class="comment-text">This is a placeholder comment.</div>
+              <div class="comment-date">1 day ago</div>
+            </li>
+          </ul>
+          <!-- Add a form to submit new comments -->
+          <form class="comment-form">
+            <textarea class="comment-input" placeholder="Write a comment..."></textarea>
+            <button class="comment-submit">Submit</button>
+          </form>
+        </div>
+      </article>
+      
+      <article class="post">
+        <header class="post-header">
+          <img src="images/icons/user-avatar.png" alt="Avatar" class="avatar">
+          <a href="user-profile.html"><span class="name">Jane Doe</span></a>
+        </header>
+      
+        <a class="image-link" data-image-url="images/post-hammock.png">
+          <img src="images/post-hammock.png" alt="Laying in campinghammock at angle."   class="image-preview">
+        </a>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        <footer class="post-footer">
+          <button class="heart-icon">
+            <img src="images/logos/favicon-32x32.png" alt="Heart">
+          </button>
+          <button class="comment-icon">
+            <img src="images/icons/comments.png" alt="Comment" width="32" height="32">
+            <!-- <a href="https://www.flaticon.com/free-icons/message" title="message icons">Message icons created by Freepik - Flaticon</a> -->
+          </button>
+          <button class="share-icon">
+            <img src="images/icons/next.png" alt="Share" width="32" height="32">
+            <!-- <a href="https://www.flaticon.com/free-icons/share" title="share icons">Share icons created by Freepik - Flaticon</a> -->
+          </button>
+        </footer>
+        <div class="comment-section">
+          <form class="comment-form">
+            <textarea class="comment-input" placeholder="Write a comment..."></textarea>
+            <button class="comment-submit">Submit</button>
+          </form>
+        </div>
+      </article>
+    
+      <article class="post">
+        <header class="post-header">
+            <img src="images/icons/user-avatar.png" alt="Avatar" class="avatar">
+            <a href="user-profile.html"><span class="name">Bob Smith</span></a>
+        </header>
+        <a class="image-link" data-image-url="images/messycar.jpg">
+          <img src="images/messycar.jpg" alt="Living in back of car set up." class="image-preview">
+        </a>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        <footer class="post-footer">
+          <button class="heart-icon">
+            <img src="images/logos/favicon-32x32.png" alt="Heart">
+          </button>
+          <button class="comment-icon">
+            <img src="images/icons/comments.png" alt="Comment" width="32" height="32">
+            <!-- <a href="https://www.flaticon.com/free-icons/message" title="message icons">Message icons created by Freepik - Flaticon</a> -->
+          </button>
+          <button class="share-icon">
+            <img src="images/icons/next.png" alt="Share" width="32" height="32">
+            <!-- <a href="https://www.flaticon.com/free-icons/share" title="share icons">Share icons created by Freepik - Flaticon</a> -->
+          </button>
+        </footer>
+        <div class="comment-section">
+          <form class="comment-form">
+            <textarea class="comment-input" placeholder="Write a comment..."></textarea>
+            <button class="comment-submit">Submit</button>
+          </form>
+        </div>
+      </article>
+      <!-- Image Modal -->
+      <div class="modal-overlay"></div>
+      <div class="modal" id="image-modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img class="modal-image" alt="#" src="#">
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
